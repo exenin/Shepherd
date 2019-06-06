@@ -1,0 +1,4 @@
+docker rm -f sheperd
+docker build -t sheperd .
+
+docker run -p8000:8000 --name sheperd -d  --rm sheperd
